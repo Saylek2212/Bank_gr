@@ -1,3 +1,93 @@
-h1 {
-    color:green;
+.header__page {
 }
+.header_page_nav {
+    margin-block-end: clamp(1em, 3vw, 95px);
+}
+.container {
+}
+.page__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page__logo_text {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+.header__nav_links {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: clamp(12px, 2vw, 18px);
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+    margin-block-end: 1em;
+    & ul {
+        list-style-type: none;
+    }
+    & a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+.nav_link {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: clamp(12px, 2vw, 18px);
+    font-weight: 600;
+    line-height: 27px;
+    text-decoration: none;
+}
+.header__btns {
+    display: flex;
+    gap: 2em;
+}
+.main_btn {
+    border-radius: 5px;
+    background: #dad873;
+    background-blend-mode: normal;
+    border: none;
+    padding: 1vw 2vw;
+}
+.header__page_hero {
+    
+}
+.left__box {
+}
+.page_tittle {
+    display: block;
+    max-width: min(300px);
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: clamp(24px, 4vw, 80px);
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: capitalize;
+    border-bottom: 2px solid #ffffff;
+    padding-block-end: 2vw;
+    margin-block-end: 3vw;
+}
+.proposition {
+    display: flex;
+    gap: 1em;
+}
+.num {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: clamp(18px, 3vw, 48px);
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: capitalize;
+    margin-block-end: 0.5em;
+}
+.proposition_block {
+    margin-block-end: 1em;
+}
+.right__box {
+}
+
+

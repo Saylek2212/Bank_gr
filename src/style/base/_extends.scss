@@ -24,13 +24,15 @@
 }
 
 .main__text {
-    color: #ffffff;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: clamp(12px, 2vw, 18px);
     font-weight: 400;
-    line-height: 25.29px;
+    line-height: 120%;
 }
 
 .green {
     background-color: rgb(48, 153, 117);
+}
+.bile {
+    color: $white;
 }
