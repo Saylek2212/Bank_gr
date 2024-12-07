@@ -448,6 +448,13 @@ template {
   padding: 1vw 2vw;
 }
 
+.header__page_hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-block-end: clamp(2em, 3vw, 95px);
+}
+
 .page_tittle {
   display: block;
   max-width: 300px;
@@ -479,4 +486,131 @@ template {
 
 .proposition_block {
   margin-block-end: 1em;
+}
+
+.right__box {
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+}
+.right__box img {
+  transform: translateY(35px);
+}
+
+.card {
+  padding-block-start: clamp(2em, 3vw, 95px);
+  background: rgb(255, 255, 255);
+}
+.card .main__text {
+  text-align: center;
+  margin-block-end: clamp(2em, 3vw, 200px);
+}
+
+.card__tittle {
+  color: #309975;
+  font-family: Poppins;
+  font-size: clsmp(18px, 3vw, 48px);
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+}
+
+.card__petal-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.card__petal-1, .card__petal-2 {
+  border-radius: 20px;
+  background: rgba(239, 238, 180, 0.2);
+  background-blend-mode: normal;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  padding: 2vw 4vw;
+}
+
+.card_btn {
+  border-radius: 10px;
+  background: #dad873;
+  background-blend-mode: normal;
+  padding: 1vw 3vw;
+  border: none;
+  color: #575757;
+  font-family: Poppins;
+  font-size: clamp(12px, 2vw, 18px);
+  font-weight: 500;
+  line-height: 27px;
+  margin-block-end: 20px;
+}
+
+.card_list > li {
+  list-style-type: disc;
+  margin-block-end: 10px;
+  color: #575757;
+  font-family: Poppins;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.petal1-bottom {
+  border-radius: 5px;
+  background: #f8bf88;
+  background-blend-mode: normal;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.card__visacard_petal1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 342px;
+  height: 205px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #dad873 0%, #ffca63 100%);
+  background-blend-mode: normal;
+}
+
+.visacard-tittle {
+  color: #20656f;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 36.05px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__visacard-text {
+  color: #20656f;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.03px;
+  text-align: center;
+}
+
+.card__visacard-cash {
+  color: #20656f;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 36.05px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__visacard_petal2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 342px;
+  height: 205px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #ffcdc2 0%, #f88888 100%);
+  background-blend-mode: normal;
 }/*# sourceMappingURL=main.css.map */
