@@ -1,0 +1,60 @@
+.global {
+    text-align: center;
+    padding-block: clamp(2em, 2vw, 133px);
+    background-color: $white;
+}
+.container {
+}
+.global__tittle {
+    color: #575757;
+    font-family: Poppins;
+    font-size: clamp(1.2rem, 2vw, 48px);
+    font-weight: 600;
+    margin-block-end: 1rem;
+}
+.global__subtittle {
+    color: #575757;
+    font-family: Poppins;
+    font-size: clamp(1rem, 2vw, 24px);
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+    margin-block-end: 1rem;
+}
+.global__main {
+}
+.global__main_left {
+}
+.global__main_card {
+    padding: 4em 3em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    margin-block-end: 2em;
+}
+.global__main_card-tittle {
+    color: #575757;
+    font-family: Poppins;
+    font-size: clamp(1rem, 2vw, 24px);
+    font-weight: 600;
+    line-height: 110%;
+}
+.global__main_card-text {
+    color: #575757;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 110%;
+}
+.global__main_center {
+}
+.global__main_img {
+}
+.global__main_right {
+}
+.green {
+    background: #309975;
+    .global__main_card-tittle, .global__main_card-text {
+        color: $white;
+    }
+
+}

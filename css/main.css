@@ -10,6 +10,8 @@ html *::after {
 }
 
 body {
+  display: grid;
+  grid-template-rows: 1fr;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -613,4 +615,132 @@ template {
   border-radius: 15px;
   background: linear-gradient(180deg, #ffcdc2 0%, #f88888 100%);
   background-blend-mode: normal;
+}
+
+.exchange {
+  text-align: center;
+  padding-block: clamp(2em, 2vw, 133px);
+}
+
+.exchange__tittle {
+  text-align: center;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: clamp(1.5rem, 3vw, 48px);
+  font-weight: 500;
+  line-height: 110%;
+  padding-block-end: 1rem;
+}
+
+.main__text {
+  text-align: center;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
+  line-height: 110%;
+  padding-block-end: 1rem;
+}
+
+.state {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: clamp(16px, 3vw, 24px);
+  font-weight: 400;
+  padding-block-end: 1rem;
+}
+
+.num {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: clamp(1.5rem, 1vw, 36px);
+  font-weight: 500;
+}
+
+.sell__num, .sell__curr {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: clamp(1rem, 1vw, 36px);
+  font-weight: 500;
+}
+
+.exchange__sell-top, .exchange__sell-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 2.5em;
+  outline: 2px solid #ffffff;
+  margin-block-end: 1em;
+}
+
+.sell__btn {
+  background: rgb(255, 202, 99);
+  color: #20656f;
+  font-family: Poppins;
+  font-size: clamp(1rem, 2vw, 18px);
+  font-weight: 500;
+  padding: 1em;
+  border-color: rgb(255, 202, 99);
+  border-radius: 5px;
+}
+
+.global {
+  text-align: center;
+  padding-block: clamp(2em, 2vw, 133px);
+  background-color: rgb(255, 255, 255);
+}
+
+.global__tittle {
+  color: #575757;
+  font-family: Poppins;
+  font-size: clamp(1.2rem, 2vw, 48px);
+  font-weight: 600;
+  margin-block-end: 1rem;
+}
+
+.global__subtittle {
+  color: #575757;
+  font-family: Poppins;
+  font-size: clamp(1rem, 2vw, 24px);
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  margin-block-end: 1rem;
+}
+
+.global__main_card {
+  padding: 4em 3em;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  margin-block-end: 2em;
+}
+
+.global__main_card-tittle {
+  color: #575757;
+  font-family: Poppins;
+  font-size: clamp(1rem, 2vw, 24px);
+  font-weight: 600;
+  line-height: 110%;
+}
+
+.global__main_card-text {
+  color: #575757;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.green {
+  background: #309975;
+}
+.green .global__main_card-tittle, .green .global__main_card-text {
+  color: rgb(255, 255, 255);
+}
+
+.footer__page {
+  color: rgb(255, 255, 255);
+}
+.footer__page * {
+  margin-block-end: 1rem;
 }/*# sourceMappingURL=main.css.map */
