@@ -387,12 +387,12 @@ template {
   max-width: 1529px;
   margin-inline: 2vw;
   padding-inline: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .header_page_nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-block-end: clamp(1em, 3vw, 95px);
 }
 
@@ -418,10 +418,14 @@ template {
   font-weight: 400;
   line-height: 27px;
   text-transform: capitalize;
-  margin-block-end: 1em;
 }
 .header__nav_links ul {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
 }
 .header__nav_links a {
   color: #ffffff;
@@ -439,7 +443,15 @@ template {
 
 .header__btns {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2em;
+  margin-inline-start: 1em;
+}
+.header__btns > a {
+  white-space: nowrap;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .main_btn {
@@ -447,7 +459,7 @@ template {
   background: #dad873;
   background-blend-mode: normal;
   border: none;
-  padding: 1vw 2vw;
+  padding: 10px;
 }
 
 .header__page_hero {
@@ -459,10 +471,10 @@ template {
 
 .page_tittle {
   display: block;
-  max-width: 300px;
+  max-width: 100%;
   color: #ffffff;
   font-family: Poppins;
-  font-size: clamp(24px, 4vw, 80px);
+  font-size: clamp(24px, 6vw, 80px);
   font-weight: 700;
   line-height: 120%;
   text-transform: capitalize;
@@ -472,6 +484,7 @@ template {
 }
 
 .proposition {
+  max-width: 350px;
   display: flex;
   gap: 1em;
 }
@@ -479,7 +492,7 @@ template {
 .num {
   color: #ffffff;
   font-family: Poppins;
-  font-size: clamp(18px, 3vw, 48px);
+  font-size: clamp(18px, 2vw, 48px);
   font-weight: 700;
   line-height: 100%;
   text-transform: capitalize;
@@ -743,4 +756,10 @@ template {
 }
 .footer__page * {
   margin-block-end: 1rem;
+}
+
+@media screen and (min-width: 760px) {
+  .header_page_nav {
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=main.css.map */
