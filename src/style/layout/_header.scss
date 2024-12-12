@@ -22,6 +22,9 @@
     line-height: 42px;
     text-transform: uppercase;
 }
+.page__logo_text-link {
+    text-decoration: none;
+}
 .header__nav_links {
     color: #ffffff;
     font-family: Poppins;
@@ -39,6 +42,9 @@
     & a {
         color: #ffffff;
         text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }
 .nav_link {
@@ -60,6 +66,9 @@
         color: #ffffff;
         text-decoration: none;
     }
+    a:hover {
+        text-decoration: underline;
+    }
 }
 .main_btn {
     border-radius: 5px;
@@ -67,6 +76,10 @@
     background-blend-mode: normal;
     border: none;
     padding: 10px;
+    a {
+        color: #309975;
+        text-decoration: none;
+    }
 }
 .header__page_hero {
     display: flex;
@@ -78,7 +91,7 @@
 }
 .page_tittle {
     display: block;
-    max-width: 100%;
+    max-width: 50%;
     color: #ffffff;
     font-family: Poppins;
     font-size: clamp(24px, 6vw, 80px);

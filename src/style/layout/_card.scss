@@ -9,7 +9,7 @@
 .card__tittle {
     color: #309975;
     font-family: Poppins;
-    font-size: clsmp(18px, 3vw, 48px);
+    font-size: clamp(18px, 4vw, 48px);
     font-weight: 700;
     line-height: 120%;
     text-align: center;
@@ -43,6 +43,18 @@
 }
 .petal1-top {
     
+}
+.card__tittle_box {
+    color: #dad873;
+    font-family: Poppins;
+    font-size: clamp(16px, 2vw, 36px);
+    font-weight: 500;
+}
+.card__tittle_box-left {
+    color: #f8bf88;
+    font-family: Poppins;
+    font-size: clamp(16px, 2vw, 36px);
+    font-weight: 500;
 }
 .card_list>li {
     list-style-type: disc;

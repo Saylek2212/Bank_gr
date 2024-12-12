@@ -411,6 +411,10 @@ template {
   text-transform: uppercase;
 }
 
+.page__logo_text-link {
+  text-decoration: none;
+}
+
 .header__nav_links {
   color: #ffffff;
   font-family: Poppins;
@@ -430,6 +434,9 @@ template {
 .header__nav_links a {
   color: #ffffff;
   text-decoration: none;
+}
+.header__nav_links a:hover {
+  text-decoration: underline;
 }
 
 .nav_link {
@@ -453,6 +460,9 @@ template {
   color: #ffffff;
   text-decoration: none;
 }
+.header__btns a:hover {
+  text-decoration: underline;
+}
 
 .main_btn {
   border-radius: 5px;
@@ -460,6 +470,10 @@ template {
   background-blend-mode: normal;
   border: none;
   padding: 10px;
+}
+.main_btn a {
+  color: #309975;
+  text-decoration: none;
 }
 
 .header__page_hero {
@@ -471,7 +485,7 @@ template {
 
 .page_tittle {
   display: block;
-  max-width: 100%;
+  max-width: 50%;
   color: #ffffff;
   font-family: Poppins;
   font-size: clamp(24px, 6vw, 80px);
@@ -524,7 +538,7 @@ template {
 .card__tittle {
   color: #309975;
   font-family: Poppins;
-  font-size: clsmp(18px, 3vw, 48px);
+  font-size: clamp(18px, 4vw, 48px);
   font-weight: 700;
   line-height: 120%;
   text-align: center;
@@ -556,6 +570,20 @@ template {
   font-weight: 500;
   line-height: 27px;
   margin-block-end: 20px;
+}
+
+.card__tittle_box {
+  color: #dad873;
+  font-family: Poppins;
+  font-size: clamp(16px, 2vw, 36px);
+  font-weight: 500;
+}
+
+.card__tittle_box-left {
+  color: #f8bf88;
+  font-family: Poppins;
+  font-size: clamp(16px, 2vw, 36px);
+  font-weight: 500;
 }
 
 .card_list > li {
@@ -664,10 +692,22 @@ template {
 }
 
 .num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #ffffff;
   font-family: Poppins;
   font-size: clamp(1.5rem, 1vw, 36px);
   font-weight: 500;
+}
+.num::after {
+  content: "";
+  max-width: 0;
+  max-height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #ffca63;
+  margin-inline-start: 0.2em;
 }
 
 .sell__num, .sell__curr {
@@ -761,5 +801,39 @@ template {
 @media screen and (min-width: 760px) {
   .header_page_nav {
     justify-content: space-between;
+  }
+  .header__page_hero {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header__page_hero .left__box {
+    max-width: 704px;
+  }
+  .header__page_hero .page_tittle {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 488px) {
+  .card__petal-block {
+    flex-direction: row;
+    gap: 5vw;
+    margin-block-end: 8em;
+  }
+  .exchange__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .exchange__currency {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .exchange__currency .exchange__currency_top > p, .exchange__currency .exchange__currency_bottom > p {
+    margin-block-end: 1em;
+  }
+}
+@media screen and (min-width: 960px) {
+  .card__petal-block {
+    gap: 10vw;
   }
 }/*# sourceMappingURL=main.css.map */

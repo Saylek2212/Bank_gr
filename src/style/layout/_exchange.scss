@@ -32,10 +32,22 @@
     padding-block-end: 1rem;
 }
 .num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
     font-family: Poppins;
     font-size: clamp(1.5rem, 1vw, 36px);
     font-weight: 500;
+    &::after {
+        content:"";
+        max-width: 0;
+        max-height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid #ffca63;
+        margin-inline-start: .2em;
+    }
 }
 .exchange__currency_bottom {
 }
