@@ -15,6 +15,12 @@
             min-width: 100%;
         }
     }
+    .column {
+        display: flex;
+        justify-content: space-around;
+        // columns: 200px;
+        // column-gap: 5em;
+    }
     
 }
 
@@ -35,6 +41,22 @@
         .exchange__currency_top>p, .exchange__currency_bottom>p {
             margin-block-end: 1em;
         }
+    }
+    .global__main {
+        display: flex;
+        align-items: center;
+        column-gap: 2vw;
+    }
+
+    .footer__nav {
+        display: flex;
+        justify-content: space-around;
+        column-gap: 3vw;
+    }
+    .footer__bottom {
+        display: flex;
+        justify-content: center;
+        column-gap: 2vw;
     }
 }
 
